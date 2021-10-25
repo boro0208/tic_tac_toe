@@ -16,6 +16,13 @@ squares.forEach(function (item, idx) {
 });
 
 document.getElementById("start").addEventListener("click", function() {
+    document.querySelector(".player1").append(document.getElementById("one").value);
+    document.querySelector(".player2").append(document.getElementById("two").value);
     document.getElementById("player").remove();
-    document.getElementById("gameboard").classList.remove("none");
+    document.getElementById("game").classList.remove("none");
+    addListenerOnButtons();
+});
+
+document.getElementById("restart").addEventListener("click", function() {
+    location.reload();
 });

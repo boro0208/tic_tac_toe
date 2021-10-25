@@ -26,7 +26,7 @@ body {
     flex: 1;
     font-size: 68px;
     color: #005B46;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .player {
@@ -144,4 +144,29 @@ input:focus {
     color: #F2FEDC;
     font-size: 48px;
     font-weight: bold;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.competitors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.competitors h2 {
+    font-size: 38px;
+    margin: 0 20px 50px 20px;
+    color: #005B46;
+}
+
+.competitors p {
+    font-weight: 900;
+    /* margin: 0 20px 150px 20px; */
+    margin-top: -30px;
 }

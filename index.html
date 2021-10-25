@@ -13,7 +13,7 @@
         <div class="player" id="player">
             <div class="avatarOne">
                 <img src="img/av1.png" alt="player one" width="200px" height="200px">
-                <input type="text" value="Player 1">
+                <input type="text" value="Player 1" id="one">
             </div>
             <div class="vs">
                 <img src="img/vs-removebg.png" alt="player two" width="110px" height="110px">
@@ -21,19 +21,27 @@
             </div>
             <div class="avatarTwo">
                 <img src="img/av2.png" alt="player two" width="200px" height="200px">
-                <input type="text" value="Player 2">
+                <input type="text" value="Player 2" id="two">
             </div>
         </div>
-        <div class="gameboard none" id="gameboard">
-            <div class="square" data-id="0"></div>
-            <div class="square" data-id="1"></div>
-            <div class="square" data-id="2"></div>
-            <div class="square" data-id="3"></div>
-            <div class="square" data-id="4"></div>
-            <div class="square" data-id="5"></div>
-            <div class="square" data-id="6"></div>
-            <div class="square" data-id="7"></div>
-            <div class="square" data-id="8"></div>
+        <div class="game none" id="game">
+            <div class="competitors">
+                <h2 class="player1"></h2>
+                <p>VS</p>
+                <h2 class="player2"></h2>
+            </div>
+            <div class="gameboard" id="gameboard">
+                <div class="square" data-id="0"></div>
+                <div class="square" data-id="1"></div>
+                <div class="square" data-id="2"></div>
+                <div class="square" data-id="3"></div>
+                <div class="square" data-id="4"></div>
+                <div class="square" data-id="5"></div>
+                <div class="square" data-id="6"></div>
+                <div class="square" data-id="7"></div>
+                <div class="square" data-id="8"></div>
+            </div>
+            <button type="button" id="restart" class="start">Restart Game</button>
         </div>
     </div>
     <script src="js/app.js" defer></script>
