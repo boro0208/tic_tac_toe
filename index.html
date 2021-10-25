@@ -10,30 +10,30 @@
 <body>
     <div class="wrapper">
         <h1>Tic Tac Toe</h1>
-        <div class="player">
+        <div class="player" id="player">
             <div class="avatarOne">
-                <img src="img/av2.png" alt="player one" width="220px" height="220px">
+                <img src="img/av1.png" alt="player one" width="200px" height="200px">
                 <input type="text" value="Player 1">
             </div>
             <div class="vs">
                 <img src="img/vs-removebg.png" alt="player two" width="110px" height="110px">
-                <button type="button" class="start">START GAME</button>
+                <button type="button" class="start" id="start">START GAME</button>
             </div>
             <div class="avatarTwo">
-                <img src="img/av1.png" alt="player two" width="220px" height="220px">
+                <img src="img/av2.png" alt="player two" width="200px" height="200px">
                 <input type="text" value="Player 2">
             </div>
         </div>
-        <div class="game">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
+        <div class="gameboard none" id="gameboard">
+            <div class="square" data-id="0"></div>
+            <div class="square" data-id="1"></div>
+            <div class="square" data-id="2"></div>
+            <div class="square" data-id="3"></div>
+            <div class="square" data-id="4"></div>
+            <div class="square" data-id="5"></div>
+            <div class="square" data-id="6"></div>
+            <div class="square" data-id="7"></div>
+            <div class="square" data-id="8"></div>
         </div>
     </div>
     <script src="js/app.js" defer></script>
